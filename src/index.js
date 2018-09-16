@@ -1,5 +1,11 @@
-import "babel-polyfill";
-import React from 'react';
-import ReactDOM from 'react-dom';
+import "@babel/polyfill";
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
 
-ReactDOM.render( < MagicWord / > , document.querySelector('[data-component-magic-word]'))
+class App extends Component {
+  render() {
+    return <h1>Hello Guys</h1>;
+  }
+}
+
+ReactDOM.render(<App />, document.querySelector("#app"));
